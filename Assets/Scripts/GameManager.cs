@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject nextLevelButtons;
 	public string nextLevelToLoad;
 
+	public GameObject beginAgainButtons;
+	public string beginLevelToLoad;
 	private float currentTime;
 
 	// setup the game
@@ -57,6 +59,10 @@ public class GameManager : MonoBehaviour {
 		// inactivate the nextLevelButtons gameObject, if it is set
 		if (nextLevelButtons)
 			nextLevelButtons.SetActive (false);
+		
+		// inactivate the beginAgainButtons gameObject, if it is set
+		if (beginAgainButtons)
+			beginAgainButtons.SetActive (false);
 	}
 
 	// this is the main game event loop
@@ -87,6 +93,10 @@ public class GameManager : MonoBehaviour {
 		// activate the playAgainButtons gameObject, if it is set 
 		if (playAgainButtons)
 			playAgainButtons.SetActive (true);
+		
+		// activate the beginAgainButtons gameObject, if it is set
+		if (beginAgainButtons)
+			beginAgainButtons.SetActive (true);
 
 		// reduce the pitch of the background music, if it is set 
 		if (musicAudioSource)
@@ -144,6 +154,11 @@ public class GameManager : MonoBehaviour {
 	{
 		// we are just loading the specified next level (scene)
         SceneManager.LoadScene(nextLevelToLoad);
+	}
+
+	public void BeginLevel()
+	{
+		SceneManager.LoadScene(beginLevelToLoad);
 	}
 	
 
