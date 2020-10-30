@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject quitButtons;
 
 	public GameObject spawner;
+	public GameObject spawnerSuperBonus;
 
 	private float currentTime;
 	private bool pagb = false, nlvb = false;
@@ -102,10 +103,13 @@ public class GameManager : MonoBehaviour {
     public void Resume()
     {
 		//Time.timeScale = 1.0f;
-		if (nlvb)
+		if (nextLevelButtons)
 		{
-			nextLevelButtons.SetActive(true);
-			nlvb = true;
+			if (nlvb)
+			{
+				nextLevelButtons.SetActive(true);
+				nlvb = true;
+			}
 		}
 		if (pagb)
         {
@@ -116,6 +120,8 @@ public class GameManager : MonoBehaviour {
 		resumeButtons.SetActive(false);
 		quitButtons.SetActive(false);
 		spawner.SetActive(true);
+		if(spawnerSuperBonus)
+			spawnerSuperBonus.SetActive(true);
 		GameIsPaused = false;
 
 	}
@@ -123,10 +129,13 @@ public class GameManager : MonoBehaviour {
 	public void Pause()
     {
 		//Time.timeScale = 0.0f;
-		if (nextLevelButtons.activeSelf)
+		if (nextLevelButtons)
 		{
-			nlvb = true;
-			nextLevelButtons.SetActive(false);
+			if (nextLevelButtons.activeSelf)
+			{
+				nlvb = true;
+				nextLevelButtons.SetActive(false);
+			}
 		}
 		if (playAgainButtons.activeSelf)
 		{
@@ -137,6 +146,8 @@ public class GameManager : MonoBehaviour {
 		resumeButtons.SetActive(true);
 		quitButtons.SetActive(true);
 		spawner.SetActive(false);
+		if (spawnerSuperBonus)
+			spawnerSuperBonus.SetActive(false);
 		GameIsPaused = true;
 	}
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4416804, g: 0.48331892, b: 0.53140426, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -132,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Play Again Text (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716651489254205698, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
       objectReference: {fileID: 0}
     - target: {fileID: 7288167017091247715, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
         type: 3}
@@ -585,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &187991396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,6 +1237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Play Again Text (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6716651489254205698, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
     - target: {fileID: 7288167017091247715, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1307,6 +1317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Play Again Text (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6716651489254205698, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
     - target: {fileID: 7288167017091247715, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1369,6 +1384,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 413196, guid: 55dde9052a722fb42b4ae21aa5c7443c,
     type: 3}
   m_PrefabInstance: {fileID: 615209251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &819060366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161068, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161234, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_Name
+      value: ResumeButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 342826370218161234, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482826338661478040, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482826338805468852, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482826338886703489, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482826339295676774, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a, type: 3}
+--- !u!1 &903680697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 342826370218161234, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 819060366}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &940667595
 PrefabInstance:
@@ -1876,6 +1991,105 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644579419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1542266874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2710094528488179692, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570123506962266696, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228461440685651988, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_Name
+      value: QuitButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228461440685651988, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398478253145627535, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: speed
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336302141465594174, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594649061499887265, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960692895326876798, guid: 370d9f380367536409bfd14108c87660,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 370d9f380367536409bfd14108c87660, type: 3}
 --- !u!1001 &1562760071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2235,8 +2449,12 @@ MonoBehaviour:
   playAgainLevelToLoad: Level2
   nextLevelButtons: {fileID: 0}
   nextLevelToLoad: 
-  beginAgainButtons: {fileID: 2060063493}
-  beginLevelToLoad: Level1
+  mainLevelButtons: {fileID: 2060063493}
+  mainLevelToLoad: Level1
+  resumeButtons: {fileID: 903680697}
+  quitButtons: {fileID: 2017026438}
+  spawner: {fileID: 125389964}
+  spawnerSuperBonus: {fileID: 0}
 --- !u!4 &1898223830
 Transform:
   m_ObjectHideFlags: 0
@@ -2314,6 +2532,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55dde9052a722fb42b4ae21aa5c7443c, type: 3}
+--- !u!1 &2017026438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5228461440685651988, guid: 370d9f380367536409bfd14108c87660,
+    type: 3}
+  m_PrefabInstance: {fileID: 1542266874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2060063493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5758825931665741482, guid: 4f1e4856f73e6c94e95c4e8195a19238,
@@ -2406,6 +2630,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1359281545264095124, guid: 4f1e4856f73e6c94e95c4e8195a19238,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2414,7 +2643,7 @@ PrefabInstance:
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
@@ -2429,7 +2658,7 @@ PrefabInstance:
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.34669012
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
@@ -2439,7 +2668,7 @@ PrefabInstance:
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93797976
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
@@ -2454,7 +2683,7 @@ PrefabInstance:
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -40.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741480, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
@@ -2464,7 +2693,27 @@ PrefabInstance:
     - target: {fileID: 5758825931665741482, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_Name
-      value: 'RestartButtons '
+      value: 'MainLevelButtons '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758825931665741482, guid: 4f1e4856f73e6c94e95c4e8195a19238,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704088071154190644, guid: 4f1e4856f73e6c94e95c4e8195a19238,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704088071757541210, guid: 4f1e4856f73e6c94e95c4e8195a19238,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704088072010440186, guid: 4f1e4856f73e6c94e95c4e8195a19238,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1e4856f73e6c94e95c4e8195a19238, type: 3}
@@ -2479,6 +2728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Play Again Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716651489254205698, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 2519940607
       objectReference: {fileID: 0}
     - target: {fileID: 7288167017091247715, guid: 9c8c8976f1c9dba0b8305d53511b5e75,
         type: 3}
