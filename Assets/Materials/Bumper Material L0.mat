@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bumper Material L2
+  m_Name: Bumper Material L0
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _EMISSIONMAP _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME
     _UVSEC_UV1
@@ -85,8 +85,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.42745098, g: 0.0117647, b: 0.015617002, a: 1}
-    - _EmissionColor: {r: 1.3348337, g: 0.06652685, b: 0, a: 1.3348337}
+    - _Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    - _EmissionColor: {r: 2.7569547, g: 2.7569547, b: 2.7569547, a: 1.3348337}
     - _EmissionColorUI: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorWithMapUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
