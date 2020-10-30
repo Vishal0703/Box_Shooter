@@ -1160,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 5758825931665741482, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
       propertyPath: m_Name
-      value: 'RestartButtons '
+      value: 'MainMenuButtons '
       objectReference: {fileID: 0}
     - target: {fileID: 5758825931665741482, guid: 4f1e4856f73e6c94e95c4e8195a19238,
         type: 3}
@@ -2993,7 +2993,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResumeButtons
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8629062867226265118, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a, type: 3}
 --- !u!1001 &2341764483323932106
 PrefabInstance:

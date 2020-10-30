@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject spawner;
 
 	private float currentTime;
+	private bool pagb = false, nlvb = false;
 
 	// setup the game
 	void Start () {
@@ -69,8 +70,8 @@ public class GameManager : MonoBehaviour {
 			nextLevelButtons.SetActive (false);
 		
 		// inactivate the beginAgainButtons gameObject, if it is set
-		if (mainLevelButtons)
-			mainLevelButtons.SetActive (false);
+		//if (mainLevelButtons)
+		//	mainLevelButtons.SetActive (false);
 	}
 
 	// this is the main game event loop
@@ -101,6 +102,16 @@ public class GameManager : MonoBehaviour {
     public void Resume()
     {
 		//Time.timeScale = 1.0f;
+		if (nlvb)
+		{
+			nextLevelButtons.SetActive(true);
+			nlvb = true;
+		}
+		if (pagb)
+        {
+			playAgainButtons.SetActive(true);
+			pagb = false;
+        }
 		mainLevelButtons.SetActive(false);
 		resumeButtons.SetActive(false);
 		quitButtons.SetActive(false);
@@ -112,6 +123,16 @@ public class GameManager : MonoBehaviour {
 	public void Pause()
     {
 		//Time.timeScale = 0.0f;
+		if (nextLevelButtons.activeSelf)
+		{
+			nlvb = true;
+			nextLevelButtons.SetActive(false);
+		}
+		if (playAgainButtons.activeSelf)
+		{
+			pagb = true;
+			playAgainButtons.SetActive(false);
+		}
 		mainLevelButtons.SetActive(true);
 		resumeButtons.SetActive(true);
 		quitButtons.SetActive(true);
@@ -135,8 +156,8 @@ public class GameManager : MonoBehaviour {
 			playAgainButtons.SetActive (true);
 		
 		// activate the beginAgainButtons gameObject, if it is set
-		if (mainLevelButtons)
-			mainLevelButtons.SetActive (true);
+		//if (mainLevelButtons)
+		//	mainLevelButtons.SetActive (true);
 
 		// reduce the pitch of the background music, if it is set 
 		if (musicAudioSource)

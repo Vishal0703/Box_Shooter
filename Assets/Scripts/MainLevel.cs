@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RestartLevel : MonoBehaviour {
+public class MainLevel : MonoBehaviour {
 
 	// respond on collisions
 	void OnCollisionEnter(Collision newCollision)
