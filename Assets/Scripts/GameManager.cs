@@ -2,12 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.PackageManager;
 
 public class GameManager : MonoBehaviour {
 
 	// make game manager public static so can access this from other scripts
 	public static GameManager gm;
 
+	public static bool GameIsPaused = false;
 	// public variables
 	public int score=0;
 
@@ -31,8 +33,14 @@ public class GameManager : MonoBehaviour {
 	public GameObject nextLevelButtons;
 	public string nextLevelToLoad;
 
-	public GameObject beginAgainButtons;
-	public string beginLevelToLoad;
+	public GameObject mainLevelButtons;
+	public string mainLevelToLoad;
+
+	public GameObject resumeButtons;
+	public GameObject quitButtons;
+
+	public GameObject spawner;
+
 	private float currentTime;
 
 	// setup the game
@@ -61,25 +69,57 @@ public class GameManager : MonoBehaviour {
 			nextLevelButtons.SetActive (false);
 		
 		// inactivate the beginAgainButtons gameObject, if it is set
-		if (beginAgainButtons)
-			beginAgainButtons.SetActive (false);
+		if (mainLevelButtons)
+			mainLevelButtons.SetActive (false);
 	}
 
 	// this is the main game event loop
 	void Update () {
+		if (Input.GetKeyDown(KeyCode.P))
+		{
+			if (GameIsPaused)
+			{
+				Resume();
+			}
+			else
+			{
+				Pause();
+			}
+		}
 		if (!gameIsOver) {
 			if (canBeatLevel && (score >= beatLevelScore)) {  // check to see if beat game
 				BeatLevel ();
 			} else if (currentTime < 0) { // check to see if timer has run out
 				EndGame ();
-			} else { // game playing state, so update the timer
+			} else if (!GameIsPaused) { // game playing state, so update the timer
 				currentTime -= Time.deltaTime;
 				mainTimerDisplay.text = currentTime.ToString ("0.00");				
 			}
 		}
 	}
 
-	void EndGame() {
+    public void Resume()
+    {
+		//Time.timeScale = 1.0f;
+		mainLevelButtons.SetActive(false);
+		resumeButtons.SetActive(false);
+		quitButtons.SetActive(false);
+		spawner.SetActive(true);
+		GameIsPaused = false;
+
+	}
+
+	public void Pause()
+    {
+		//Time.timeScale = 0.0f;
+		mainLevelButtons.SetActive(true);
+		resumeButtons.SetActive(true);
+		quitButtons.SetActive(true);
+		spawner.SetActive(false);
+		GameIsPaused = true;
+	}
+
+    void EndGame() {
 		// game is over
 		gameIsOver = true;
 
@@ -95,8 +135,8 @@ public class GameManager : MonoBehaviour {
 			playAgainButtons.SetActive (true);
 		
 		// activate the beginAgainButtons gameObject, if it is set
-		if (beginAgainButtons)
-			beginAgainButtons.SetActive (true);
+		if (mainLevelButtons)
+			mainLevelButtons.SetActive (true);
 
 		// reduce the pitch of the background music, if it is set 
 		if (musicAudioSource)
@@ -158,8 +198,12 @@ public class GameManager : MonoBehaviour {
 
 	public void BeginLevel()
 	{
-		SceneManager.LoadScene(beginLevelToLoad);
+		SceneManager.LoadScene(mainLevelToLoad);
 	}
 	
+	public void QuitGame()
+    {
+		Application.Quit();
+    }
 
 }
