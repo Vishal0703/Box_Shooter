@@ -144,7 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timescale: 0.3
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 6855280928424970434, guid: 41aef25d4eb444342950f748c057bc54,
+    type: 3}
 --- !u!114 &2003160317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitAfterSeconds: 6
+  exitAfterSeconds: 3
   exitAnimationSeconds: 1
 --- !u!114 &350643072902598953
 MonoBehaviour:

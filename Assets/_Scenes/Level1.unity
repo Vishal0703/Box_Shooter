@@ -1943,59 +1943,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1012146482
+--- !u!1 &1012146482 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4937308328227054383, guid: 305393c6268f31e42afe84e644500386,
+    type: 3}
+  m_PrefabInstance: {fileID: 4937308327359611421}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1012146484}
-  - component: {fileID: 1012146483}
-  m_Layer: 0
-  m_Name: Spawnerpumpkin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1012146483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012146482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c094b4c713fa444baa785eb9fff38c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondsBetweenSpawning: 5
-  xMinRange: -20
-  xMaxRange: 20
-  yMinRange: 8
-  yMaxRange: 17
-  zMinRange: -20
-  zMaxRange: 20
-  spawnObjects:
-  - {fileID: 5199727519815529136, guid: e358bf8817b89c24baae161ac919719e, type: 3}
-  - {fileID: 5199727519815529136, guid: e358bf8817b89c24baae161ac919719e, type: 3}
---- !u!4 &1012146484
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012146482}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1050373119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 342826370218161234, guid: 9a9b7b75fc4f04b45ba1ea46c5c27f9a,
@@ -2495,7 +2448,7 @@ PrefabInstance:
     - target: {fileID: 8183251743151089126, guid: 104d569f752a63c5f8345e6f13ece534,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8183251743151089133, guid: 104d569f752a63c5f8345e6f13ece534,
         type: 3}
@@ -2962,6 +2915,7 @@ MonoBehaviour:
   quitButtons: {fileID: 1324545987}
   spawner: {fileID: 125389964}
   spawnerSuperBonus: {fileID: 0}
+  spawnerPumpkin: {fileID: 1012146482}
   LevelArray: []
   gamenamebutton: {fileID: 0}
   levelselbutton: {fileID: 0}
@@ -3205,6 +3159,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f329cfeafc2685bda260ce12c255f90, type: 3}
+--- !u!1001 &4937308327359611421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054377, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054383, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: m_Name
+      value: Spawnerpumpkin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 305393c6268f31e42afe84e644500386, type: 3}
 --- !u!1001 &5199727519557271115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3271,6 +3294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199727519815529136, guid: e358bf8817b89c24baae161ac919719e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e358bf8817b89c24baae161ac919719e, type: 3}

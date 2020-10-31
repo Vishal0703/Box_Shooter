@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject spawner;
 	public GameObject spawnerSuperBonus;
+	public GameObject spawnerPumpkin;
 
 	public GameObject[] LevelArray;
 
@@ -140,6 +141,8 @@ public class GameManager : MonoBehaviour {
 		spawner.SetActive(true);
 		if(spawnerSuperBonus)
 			spawnerSuperBonus.SetActive(true);
+		if (spawnerPumpkin)
+			spawnerPumpkin.SetActive(true);
 		GameIsPaused = false;
 
 	}
@@ -166,6 +169,8 @@ public class GameManager : MonoBehaviour {
 		spawner.SetActive(false);
 		if (spawnerSuperBonus)
 			spawnerSuperBonus.SetActive(false);
+		if (spawnerPumpkin)
+			spawnerPumpkin.SetActive(false);
 		GameIsPaused = true;
 	}
 
@@ -307,7 +312,7 @@ public class GameManager : MonoBehaviour {
     {
 		resettimestarted = true;
 		//Debug.Log("entered reset time");
-		yield return new WaitForSecondsRealtime(10f);
+		yield return new WaitForSecondsRealtime(5f);
 		//Debug.Log("waited 10 seconds");
 		Time.timeScale = 1f;
 		if (musicAudioSource)
