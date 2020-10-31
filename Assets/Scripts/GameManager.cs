@@ -228,6 +228,13 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(playAgainLevelToLoad);
 	}
 
+	public void LevelLoad(string level)
+	{
+		// we are just loading a scene (or reloading this scene)
+		// which is an easy way to restart the level
+		SceneManager.LoadScene(level);
+	}
+
 	// public function that can be called to go to the next level of the game
 	public void NextLevel ()
 	{

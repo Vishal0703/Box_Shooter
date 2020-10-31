@@ -2450,11 +2450,16 @@ MonoBehaviour:
   nextLevelButtons: {fileID: 0}
   nextLevelToLoad: 
   mainLevelButtons: {fileID: 2060063493}
-  mainLevelToLoad: Level1
+  mainLevelToLoad: LeveBegin
   resumeButtons: {fileID: 903680697}
   quitButtons: {fileID: 2017026438}
   spawner: {fileID: 125389964}
   spawnerSuperBonus: {fileID: 0}
+  LevelArray: []
+  gamenamebutton: {fileID: 0}
+  levelselbutton: {fileID: 0}
+  infobutton: {fileID: 0}
+  backbutton: {fileID: 0}
 --- !u!4 &1898223830
 Transform:
   m_ObjectHideFlags: 0
