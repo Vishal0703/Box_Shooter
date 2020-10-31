@@ -9,12 +9,14 @@ public class MyTargetMover : MonoBehaviour
     {
         Spin,
         Horizontal,
-        Vertical
+        Vertical,
+        Forward
     };
 
     public motionDirections motionState = motionDirections.Horizontal;
     public float spinSpeed = 180.0f;
     public float motionMagnitude = 0.1f;
+    public float moveSpeed = 1.0f;
     // Update is called once per frame
     void Update()
     {
@@ -27,12 +29,17 @@ public class MyTargetMover : MonoBehaviour
                 }
             case motionDirections.Horizontal:
             {
-                gameObject.transform.Translate(Vector3.right * (Mathf.Cos(Time.timeSinceLevelLoad) * motionMagnitude));
+                gameObject.transform.Translate(Vector3.right * (Mathf.Cos(Time.timeSinceLevelLoad*moveSpeed) * motionMagnitude));
                 break;
             }
             case motionDirections.Vertical:
             {
-                gameObject.transform.Translate(Vector3.up * (Mathf.Cos(Time.timeSinceLevelLoad) * motionMagnitude));
+                gameObject.transform.Translate(Vector3.up * (Mathf.Cos(Time.timeSinceLevelLoad*moveSpeed) * motionMagnitude));
+                break;
+            }
+            case motionDirections.Forward:
+            {
+                gameObject.transform.Translate(Vector3.forward * (Mathf.Cos(Time.timeSinceLevelLoad * moveSpeed) * motionMagnitude));
                 break;
             }
         }

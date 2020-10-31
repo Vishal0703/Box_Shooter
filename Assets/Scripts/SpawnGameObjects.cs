@@ -50,7 +50,7 @@ public class SpawnGameObjects : MonoBehaviour
 		spawnPosition.y = Random.Range (yMinRange, yMaxRange);
 		spawnPosition.z = Random.Range (zMinRange, zMaxRange);
 
-		Debug.Log($"Spawn position {spawnPosition.x}, {spawnPosition.y}, {spawnPosition.z}");
+		//Debug.Log($"Spawn position {spawnPosition.x}, {spawnPosition.y}, {spawnPosition.z}");
 
 		// determine which object to spawn
 		int objectToSpawn = Random.Range (0, spawnObjects.Length);

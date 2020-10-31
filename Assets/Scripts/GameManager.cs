@@ -59,6 +59,9 @@ public class GameManager : MonoBehaviour {
 
 		// set the current time to the startTime specified
 		currentTime = startTime;
+		Time.timeScale = 1.0f;
+		Debug.Log($"Timescale - {Time.timeScale}");
+
 
 		// get a reference to the GameManager component for use by other scripts
 		if (gm == null) 
