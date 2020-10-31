@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject gameOverScoreOutline;
 
 	public AudioSource musicAudioSource;
+	public AudioSource laserAudioSource;
 
 	public bool gameIsOver = false;
 
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour {
 
 	private float currentTime;
 	private bool pagb = false, nlvb = false;
+	bool resettimestarted = false;
 
 	// setup the game
 	void Start () {
@@ -275,5 +277,35 @@ public class GameManager : MonoBehaviour {
 		levelselbutton.SetActive(true);
 		infobutton.SetActive(true);
 		backbutton.SetActive(false);
+	}
+
+	public void DilateTime(float timescale)
+    {
+		if (!resettimestarted)
+		{
+			Debug.Log("Entered dilate time");
+			Time.timeScale = timescale;
+			if (musicAudioSource)
+				musicAudioSource.pitch = timescale;
+			if (laserAudioSource)
+				laserAudioSource.pitch = timescale;
+			StartCoroutine(ResetTime());
+		}
+		
+    }
+
+	IEnumerator ResetTime()
+    {
+		resettimestarted = true;
+		Debug.Log("entered reset time");
+		yield return new WaitForSecondsRealtime(10f);
+		Debug.Log("waited 10 seconds");
+		Time.timeScale = 1f;
+		if (musicAudioSource)
+			musicAudioSource.pitch = 1f;
+		if (laserAudioSource)
+			laserAudioSource.pitch = 1f;
+		resettimestarted = false;
+		
 	}
 }
