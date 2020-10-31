@@ -42,6 +42,13 @@ public class GameManager : MonoBehaviour {
 	public GameObject spawner;
 	public GameObject spawnerSuperBonus;
 
+	public GameObject[] LevelArray;
+
+	public GameObject gamenamebutton;
+	public GameObject levelselbutton;
+	public GameObject infobutton;
+	public GameObject backbutton;
+
 	private float currentTime;
 	private bool pagb = false, nlvb = false;
 
@@ -77,7 +84,7 @@ public class GameManager : MonoBehaviour {
 
 	// this is the main game event loop
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.P))
+		if (Input.GetKeyDown(KeyCode.P) && playAgainLevelToLoad != "LevelBegin")
 		{
 			if (GameIsPaused)
 			{
@@ -238,4 +245,28 @@ public class GameManager : MonoBehaviour {
 		Application.Quit();
     }
 
+
+	public void LevelSelect()
+    {
+		foreach(var level in LevelArray)
+        {
+			level.SetActive(true);
+        }
+		backbutton.SetActive(true);
+		gamenamebutton.SetActive(false);
+		infobutton.SetActive(false);
+		levelselbutton.SetActive(false);
+	}
+
+	public void GoBack()
+    {
+		foreach (var level in LevelArray)
+		{
+			level.SetActive(false);
+		}
+		gamenamebutton.SetActive(true);
+		levelselbutton.SetActive(true);
+		infobutton.SetActive(true);
+		backbutton.SetActive(false);
+	}
 }
