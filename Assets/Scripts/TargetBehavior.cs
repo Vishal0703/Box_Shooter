@@ -31,7 +31,6 @@ public class TargetBehavior : MonoBehaviour
 			if (GameManager.gm) {
 				GameManager.gm.targetHit (scoreAmount, timeAmount);
 			}
-				
 			// destroy the projectile
 			Destroy (newCollision.gameObject);
 				
