@@ -2897,7 +2897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf81ce52bea74e6bb1edf7dd3f6fc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 451056477829516506, guid: 67f9b9c252b86106cb6774e5a33dd5cf,
+  projectile: {fileID: 451056477829516506, guid: 8e7f52f3dd5f0564b9db27517a138563,
     type: 3}
   power: 200
   shootSFX: {fileID: 8300000, guid: c96ad3bbb7e994ae782d9a1f782e4d9b, type: 3}
