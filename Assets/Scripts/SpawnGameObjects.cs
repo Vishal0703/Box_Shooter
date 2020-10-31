@@ -50,11 +50,13 @@ public class SpawnGameObjects : MonoBehaviour
 		spawnPosition.y = Random.Range (yMinRange, yMaxRange);
 		spawnPosition.z = Random.Range (zMinRange, zMaxRange);
 
+		Debug.Log($"Spawn position {spawnPosition.x}, {spawnPosition.y}, {spawnPosition.z}");
+
 		// determine which object to spawn
 		int objectToSpawn = Random.Range (0, spawnObjects.Length);
 
 		// actually spawn the game object
-		GameObject spawnedObject = Instantiate (spawnObjects [objectToSpawn], spawnPosition, transform.rotation) as GameObject;
+		GameObject spawnedObject = Instantiate (spawnObjects [objectToSpawn], spawnPosition, spawnObjects[objectToSpawn].transform.rotation) as GameObject;
 
 		// make the parent the spawner so hierarchy doesn't get super messy
 		spawnedObject.transform.parent = gameObject.transform;

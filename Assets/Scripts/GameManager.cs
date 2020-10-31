@@ -78,7 +78,13 @@ public class GameManager : MonoBehaviour {
 		// inactivate the nextLevelButtons gameObject, if it is set
 		if (nextLevelButtons)
 			nextLevelButtons.SetActive (false);
-		
+
+		if (musicAudioSource)
+			musicAudioSource.pitch = 1f;
+
+		if (laserAudioSource)
+			laserAudioSource.pitch = 1f;
+
 		// inactivate the beginAgainButtons gameObject, if it is set
 		//if (mainLevelButtons)
 		//	mainLevelButtons.SetActive (false);
@@ -283,7 +289,7 @@ public class GameManager : MonoBehaviour {
     {
 		if (!resettimestarted)
 		{
-			Debug.Log("Entered dilate time");
+			//Debug.Log("Entered dilate time");
 			Time.timeScale = timescale;
 			if (musicAudioSource)
 				musicAudioSource.pitch = timescale;
@@ -297,9 +303,9 @@ public class GameManager : MonoBehaviour {
 	IEnumerator ResetTime()
     {
 		resettimestarted = true;
-		Debug.Log("entered reset time");
+		//Debug.Log("entered reset time");
 		yield return new WaitForSecondsRealtime(10f);
-		Debug.Log("waited 10 seconds");
+		//Debug.Log("waited 10 seconds");
 		Time.timeScale = 1f;
 		if (musicAudioSource)
 			musicAudioSource.pitch = 1f;
