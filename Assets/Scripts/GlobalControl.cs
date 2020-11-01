@@ -35,7 +35,7 @@ public class GlobalControl : MonoBehaviour
             case Difficulty.Easy:
                 {
                     level1Time = 50f;
-                    level1Beat = 100;
+                    level1Beat = 80;
                     level2Time = 30f;
                     break;
                 }
@@ -48,7 +48,7 @@ public class GlobalControl : MonoBehaviour
                 }
             case Difficulty.Hard:
                 {
-                    level1Time = 20f;
+                    level1Time = 25f;
                     level1Beat = 100;
                     level2Time = 15f;
                     break;

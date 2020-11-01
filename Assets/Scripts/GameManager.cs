@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.PackageManager;
+////using UnityEditor.PackageManager;
 
 public class GameManager : MonoBehaviour {
 
