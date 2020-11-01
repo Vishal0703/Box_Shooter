@@ -58,8 +58,18 @@ public class GameManager : MonoBehaviour {
 
 	// setup the game
 	void Start () {
-
+		GameIsPaused = false;
 		// set the current time to the startTime specified
+		if (playAgainLevelToLoad == "Level1")
+		{
+			beatLevelScore = GlobalControl.Instance.level1Beat;
+			startTime = GlobalControl.Instance.level1Time;
+		}
+
+		if (playAgainLevelToLoad == "Level2")
+		{
+			startTime = GlobalControl.Instance.level2Time;
+		}
 		currentTime = startTime;
 		Time.timeScale = 1.0f;
 		//Debug.Log($"Timescale - {Time.timeScale}");
@@ -93,16 +103,7 @@ public class GameManager : MonoBehaviour {
 		// inactivate the beginAgainButtons gameObject, if it is set
 		//if (mainLevelButtons)
 		//	mainLevelButtons.SetActive (false);
-		if(playAgainLevelToLoad == "Level1")
-        {
-			beatLevelScore = GlobalControl.Instance.level1Beat;
-			startTime = GlobalControl.Instance.level1Time;
-		}
-
-		if (playAgainLevelToLoad == "Level2")
-		{
-			startTime = GlobalControl.Instance.level2Time;
-		}
+		
 	}
 
 	// this is the main game event loop
