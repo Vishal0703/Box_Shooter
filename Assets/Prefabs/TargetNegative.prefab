@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6309346993136016628}
   - component: {fileID: 4751988410663224067}
   m_Layer: 0
-  m_Name: Targetnegative
+  m_Name: TargetNegative
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   motionState: 0
   spinSpeed: 180
   motionMagnitude: 0.1
+  moveSpeed: 1
 --- !u!114 &580001543607815844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitAfterSeconds: 10
+  exitAfterSeconds: 1.5
   exitAnimationSeconds: 1
 --- !u!95 &4751988410663224067
 Animator:

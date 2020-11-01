@@ -2917,6 +2917,7 @@ MonoBehaviour:
   spawnerSuperBonus: {fileID: 0}
   spawnerPumpkin: {fileID: 1012146482}
   LevelArray: []
+  DifficultyMode: []
   gamenamebutton: {fileID: 0}
   levelselbutton: {fileID: 0}
   infobutton: {fileID: 0}
@@ -3263,12 +3264,12 @@ PrefabInstance:
     - target: {fileID: 5199727519815208288, guid: e358bf8817b89c24baae161ac919719e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 5199727519815208288, guid: e358bf8817b89c24baae161ac919719e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 5199727519815208288, guid: e358bf8817b89c24baae161ac919719e,
         type: 3}
