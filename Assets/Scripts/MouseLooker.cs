@@ -70,8 +70,11 @@ public class MouseLooker : MonoBehaviour {
 	public void LookRotation()
 	{
 		//get the y and x rotation based on the Input manager
-		float yRot = Mathf.Clamp(Input.GetAxis("Mouse X"),-1,1) * XSensitivity;
-		float xRot = Mathf.Clamp(Input.GetAxis("Mouse Y"),-1,1) * YSensitivity;
+		float yRot = Input.GetAxis("Mouse X") * XSensitivity;
+		float xRot = Input.GetAxis("Mouse Y") * YSensitivity;
+
+		//float yRot = Mathf.Clamp(Input.GetAxis("Mouse X"), -5, 5) * XSensitivity;
+		//float xRot = Mathf.Clamp(Input.GetAxis("Mouse Y"), -5, 5) * YSensitivity;
 
 		// calculate the rotation
 		m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);

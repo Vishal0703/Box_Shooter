@@ -3528,11 +3528,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425452396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bfffe09bdf444be09ccdc4acd2e5964, type: 3}
+  m_Script: {fileID: 11500000, guid: 089fd97c927deed00ae57474c3564c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  way: 1
+  motionState: 2
+  spinSpeed: 180
+  motionMagnitude: 0.05
+  moveSpeed: 30
 --- !u!4 &1425452398
 Transform:
   m_ObjectHideFlags: 0
