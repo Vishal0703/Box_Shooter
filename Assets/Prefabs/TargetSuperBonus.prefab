@@ -112,6 +112,7 @@ MonoBehaviour:
   motionState: 1
   spinSpeed: 180
   motionMagnitude: 0.1
+  moveSpeed: 1
 --- !u!114 &3428827884057330259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitAfterSeconds: 10
+  exitAfterSeconds: 3
   exitAnimationSeconds: 1
 --- !u!95 &2915861226682498185
 Animator:

@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c094b4c713fa444baa785eb9fff38c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsBetweenSpawning: 5.5
+  secondsBetweenSpawning: 6
   xMinRange: -25
   xMaxRange: 25
   yMinRange: 8
@@ -1631,6 +1631,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 5199727519815529136, guid: e358bf8817b89c24baae161ac919719e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e358bf8817b89c24baae161ac919719e, type: 3}
 --- !u!1 &903680697 stripped
@@ -2593,7 +2598,7 @@ MonoBehaviour:
   score: 0
   canBeatLevel: 0
   beatLevelScore: 0
-  startTime: 15
+  startTime: 25
   mainScoreDisplay: {fileID: 1068487098}
   mainTimerDisplay: {fileID: 1864828884}
   gameOverScoreOutline: {fileID: 58853041}
@@ -2717,6 +2722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pumpkin-System
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855280928424970434, guid: 41aef25d4eb444342950f748c057bc54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6855280928424970447, guid: 41aef25d4eb444342950f748c057bc54,
         type: 3}

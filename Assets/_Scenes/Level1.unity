@@ -2896,8 +2896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   canBeatLevel: 1
-  beatLevelScore: 20
-  startTime: 15
+  beatLevelScore: 100
+  startTime: 30
   mainScoreDisplay: {fileID: 1068487098}
   mainTimerDisplay: {fileID: 1864828884}
   gameOverScoreOutline: {fileID: 58853041}
@@ -3220,6 +3220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937308328227054382, guid: 305393c6268f31e42afe84e644500386,
+        type: 3}
+      propertyPath: secondsBetweenSpawning
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4937308328227054383, guid: 305393c6268f31e42afe84e644500386,
         type: 3}

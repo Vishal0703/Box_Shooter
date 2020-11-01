@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject spawnerPumpkin;
 
 	public GameObject[] LevelArray;
+	public GameObject[] DifficultyMode;
 
 	public GameObject gamenamebutton;
 	public GameObject levelselbutton;
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour {
 		// set the current time to the startTime specified
 		currentTime = startTime;
 		Time.timeScale = 1.0f;
-		Debug.Log($"Timescale - {Time.timeScale}");
+		//Debug.Log($"Timescale - {Time.timeScale}");
 
 
 		// get a reference to the GameManager component for use by other scripts
@@ -92,6 +93,16 @@ public class GameManager : MonoBehaviour {
 		// inactivate the beginAgainButtons gameObject, if it is set
 		//if (mainLevelButtons)
 		//	mainLevelButtons.SetActive (false);
+		if(playAgainLevelToLoad == "Level1")
+        {
+			beatLevelScore = GlobalControl.Instance.level1Beat;
+			startTime = GlobalControl.Instance.level1Time;
+		}
+
+		if (playAgainLevelToLoad == "Level2")
+		{
+			startTime = GlobalControl.Instance.level2Time;
+		}
 	}
 
 	// this is the main game event loop
@@ -281,12 +292,28 @@ public class GameManager : MonoBehaviour {
 		levelselbutton.SetActive(false);
 	}
 
+	public void DiffSelect()
+	{
+		foreach (var diff in DifficultyMode)
+		{
+			diff.SetActive(true);
+		}
+		backbutton.SetActive(true);
+		gamenamebutton.SetActive(false);
+		infobutton.SetActive(false);
+		levelselbutton.SetActive(false);
+	}
+
 	public void GoBack()
     {
 		foreach (var level in LevelArray)
 		{
 			level.SetActive(false);
 		}
+		foreach(var diff in DifficultyMode)
+        {
+			diff.SetActive(false);
+        }
 		gamenamebutton.SetActive(true);
 		levelselbutton.SetActive(true);
 		infobutton.SetActive(true);
