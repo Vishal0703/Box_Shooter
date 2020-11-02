@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593d4dac0a56d48dc96203b26863ebe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSensitivity: 1
-  YSensitivity: 1
+  XSensitivity: 1.5
+  YSensitivity: 1.5
   clampVerticalRotation: 1
   MinimumX: -90
   MaximumX: 90

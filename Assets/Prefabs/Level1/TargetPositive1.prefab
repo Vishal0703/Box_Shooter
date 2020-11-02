@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitAfterSeconds: 1.75
+  exitAfterSeconds: 1.15
   exitAnimationSeconds: 1
 --- !u!95 &1493211892
 Animator:
